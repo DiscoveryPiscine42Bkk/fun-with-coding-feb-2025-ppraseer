@@ -9,12 +9,14 @@ body {
     padding: 0;
     margin: 0;
     background: #333;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
 }
 
 .menu ul li {
     position: relative;
     display: inline-block;
+    margin: 10px;
 }
 
 .menu ul li a {
@@ -22,39 +24,38 @@ body {
     color: white;
     padding: 15px 20px;
     display: block;
+    background: #444;
+    border-radius: 5px;
 }
 
-.menu ul li:hover {
-    background: #555;
+.menu ul li:hover a {
+    background: #666;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background: #fff;
-    min-width: 150px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.dropdown-content li {
-    display: block;
-}
-
-.dropdown-content li a {
-    color: #333;
-    padding: 10px;
-    display: block;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.image-container {
+/* รูปภาพจะซ่อนก่อน และแสดงเมื่อโฮเวอร์ */
+.image {
     width: 300px;
     height: 300px;
-    margin: 20px auto;
+    margin: 10px auto;
     background-size: cover;
     background-position: center;
+    display: none;
+}
+
+/* แสดงรูปเมื่อ hover */
+.dropdown:hover .image {
+    display: block;
+}
+
+/* กำหนดรูปแต่ละเมนู */
+.ham-cheese {
     content: url("https://i.pinimg.com/736x/5a/0c/b9/5a0cb9995a50900317ce78aac7f68ba0.jpg");
+}
+
+.turkey-swiss {
+    content: url("https://i.pinimg.com/originals/4e/12/3a/4e123a6b3a6d947b44b26b16b8e5a8a4.jpg");
+}
+
+.veggie-delight {
+    content: url("https://i.pinimg.com/originals/6f/0a/9b/6f0a9b9fddb3d0f6f6f71d39e091c0d7.jpg");
 }
