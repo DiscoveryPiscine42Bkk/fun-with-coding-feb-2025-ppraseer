@@ -1,7 +1,7 @@
 /* พื้นหลังของหน้า */
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(122, 89, 89); /* สีแดงคล้ายโลโก้ SNCF */
+    background-color: rgb(202, 26, 26);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,11 +45,12 @@ body {
     border-radius: 5px;
 }
 
+/* เมนูดรอปดาวน์ */
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: white;
-    min-width: 180px;
+    min-width: 200px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     padding: 10px 0;
@@ -60,13 +61,53 @@ body {
 .dropdown-content li {
     padding: 10px;
     text-align: center;
-}
-
-.dropdown-content li:hover {
-    background-color: #ffcc00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 /* แสดงเมนูเมื่อโฮเวอร์ */
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/* รูปภาพในเมนู */
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.menu-item a {
+    flex-grow: 1;
+}
+
+/* ใส่รูปภาพสำหรับเมนูแต่ละประเภท */
+.menu-item.pork {
+    background-image: url('pork.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+}
+
+.menu-item.hamcheese {
+    background-image: url('hamcheese.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+}
+
+.menu-item.tuna {
+    background-image: url('tuna.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
 }
