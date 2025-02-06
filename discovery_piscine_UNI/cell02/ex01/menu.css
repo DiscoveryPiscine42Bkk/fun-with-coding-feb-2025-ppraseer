@@ -4,7 +4,7 @@ body {
     background-color: #f8f8f8;
 }
 
-/* เมนูหลัก */
+/* สไตล์เมนู */
 .menu ul {
     list-style-type: none;
     padding: 0;
@@ -39,7 +39,6 @@ body {
     min-width: 180px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     padding: 0;
-    z-index: 1000;
 }
 
 .dropdown-content li {
@@ -57,7 +56,7 @@ body {
     display: block;
 }
 
-/* กำหนดพื้นที่รูปภาพ */
+/* กำหนดขนาดของพื้นที่รูปภาพ */
 .image-container {
     width: 300px;
     height: 300px;
@@ -75,10 +74,10 @@ body {
     content: url("https://i.pinimg.com/736x/5a/0c/b9/5a0cb9995a50900317ce78aac7f68ba0.jpg");
 }
 
-.hover-image.tuna:hover ~ .image-container {
+.hover-image.turkey-swiss:hover ~ .image-container {
     content: url("https://i.pinimg.com/originals/4e/12/3a/4e123a6b3a6d947b44b26b16b8e5a8a4.jpg");
 }
 
-.hover-image.hot-korea:hover ~ .image-container {
+.hover-image.veggie-delight:hover ~ .image-container {
     content: url("https://i.pinimg.com/originals/6f/0a/9b/6f0a9b9fddb3d0f6f6f71d39e091c0d7.jpg");
 }
