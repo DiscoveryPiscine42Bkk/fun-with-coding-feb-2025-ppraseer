@@ -1,113 +1,60 @@
-/* พื้นหลังของหน้า */
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(202, 26, 26);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+    text-align: center;
+    background-color: #f8f8f8;
 }
 
-/* เมนูหลัก */
-.menu {
-    background-color: yellow;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border: 10px solid #b58969;
-}
-
-/* ลิสต์เมนู */
 .menu ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
     margin: 0;
+    background: #333;
+    display: inline-block;
 }
 
 .menu ul li {
     position: relative;
     display: inline-block;
-    margin: 0 10px;
 }
 
 .menu ul li a {
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 10px 20px;
+    color: white;
+    padding: 15px 20px;
     display: block;
-    transition: background 0.3s;
 }
 
-.menu ul li a:hover {
-    background-color: #ffa500;
-    border-radius: 5px;
+.menu ul li:hover {
+    background: #555;
 }
 
-/* เมนูดรอปดาวน์ */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: white;
-    min-width: 200px;
+    background: #fff;
+    min-width: 150px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    padding: 10px 0;
-    z-index: 1000;
 }
 
-/* รายการในดรอปดาวน์ */
 .dropdown-content li {
-    padding: 10px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+    display: block;
 }
 
-/* แสดงเมนูเมื่อโฮเวอร์ */
+.dropdown-content li a {
+    color: #333;
+    padding: 10px;
+    display: block;
+}
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* รูปภาพในเมนู */
-.menu-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-}
-
-.menu-item a {
-    flex-grow: 1;
-}
-
-/* ใส่รูปภาพสำหรับเมนูแต่ละประเภท */
-.menu-item.pork {
-    background-image: url('pork.jpg');
+.image-container {
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
     background-size: cover;
     background-position: center;
-    height: 40px;
-    border-radius: 5px;
-    color: white;
-}
-
-.menu-item.hamcheese {
-    background-image: url('hamcheese.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 40px;
-    border-radius: 5px;
-    color: white;
-}
-
-.menu-item.tuna {
-    background-image: url('tuna.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 40px;
-    border-radius: 5px;
-    color: white;
+    content: url("https://i.pinimg.com/736x/5a/0c/b9/5a0cb9995a50900317ce78aac7f68ba0.jpg");
 }
