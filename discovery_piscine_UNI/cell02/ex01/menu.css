@@ -13,7 +13,7 @@ body {
 }
 
 .menu ul li {
-    position: relative;
+    position: center;
     display: inline-block;
 }
 
